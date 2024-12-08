@@ -200,7 +200,7 @@
                 <&macro_press>,
                 <&kp LCTRL &kp LEFT_SHIFT>,
                 <&macro_tap>,
-                <&kp U &kp N0 &kp N0 &kp D &kp N4>,
+                <&kp U &kp N0 &kp N0 &kp D &kp A>,
                 <&macro_release>,
                 <&kp LCTRL &kp LEFT_SHIFT>;
 
