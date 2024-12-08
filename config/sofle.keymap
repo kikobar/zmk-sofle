@@ -44,11 +44,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL &kp LEFT_SHIFT>,
-                <&macro_tap>,
-                <&kp U &kp N0 &kp N0 &kp E &kp N1>,
+                <&kp LCTRL &kp LEFT_SHIFT &kp U>,
                 <&macro_release>,
-                <&kp LCTRL &kp LEFT_SHIFT>;
+                <&kp LCTRL &kp LEFT_SHIFT &kp U>,
+                <&macro_tap>,
+                <&kp N0 &kp N0 &kp E &kp N1 &kp RET>;
 
             label = "LC_A_TILDE";
         };
