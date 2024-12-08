@@ -136,6 +136,104 @@
 
             label = "LC_U_DIERESIS";
         };
+
+        uc_a_tilde: uc_a_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp U &kp N0 &kp N0 &kp C &kp NUMBER_1>,
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_SHIFT>;
+
+            label = "UC_A_TILDE";
+        };
+
+        uc_e_tilde: uc_e_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp U &kp N0 &kp N0 &kp C &kp N9>,
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_SHIFT>;
+
+            label = "UC_E_TILDE";
+        };
+
+        uc_o_tilde: uc_o_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp U &kp N0 &kp N0 &kp D &kp N3>,
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_SHIFT>;
+
+            label = "UC_O_TILDE";
+        };
+
+        uc_i_tilde: uc_i_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp U &kp N0 &kp N0 &kp C &kp D>,
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_SHIFT>;
+
+            label = "UC_I_TILDE";
+        };
+
+        uc_u_tilde: uc_u_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp U &kp N0 &kp N0 &kp D &kp N4>,
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_SHIFT>;
+
+            label = "UC_U_TILDE";
+        };
+
+        uc_enhe: uc_enhe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp U &kp N0 &kp N0 &kp D &kp N1>,
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_SHIFT>;
+
+            label = "UC_ENHE";
+        };
+
+        uc_u_dieresis: uc_u_dieresis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp U &kp N0 &kp N0 &kp D &kp C>,
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_SHIFT>;
+
+            label = "UC_U_DIERESIS";
+        };
     };
 
     keymap {
@@ -181,8 +279,8 @@
 
         layer_3 {
             bindings = <
-&trans  &trans       &trans  &trans       &trans  &trans    &trans  &trans          &trans       &trans       &trans       &trans    &trans
-&trans  &trans       &trans  &lc_e_tilde  &trans  &trans    &trans  &lc_u_dieresis  &lc_u_tilde  &lc_i_tilde  &lc_o_tilde  &trans    &trans
+&trans  &trans       &trans  &uc_e_tilde  &trans  &trans    &trans  &uc_u_dieresis  &uc_u_tilde  &uc_i_tilde  &uc_o_tilde  &trans    &trans
+&trans  &uc_a_tilde  &trans  &lc_e_tilde  &trans  &trans    &trans  &lc_u_dieresis  &lc_u_tilde  &lc_i_tilde  &lc_o_tilde  &uc_enhe  &trans
 &trans  &lc_a_tilde  &trans  &trans       &trans  &trans    &trans  &trans          &trans       &trans       &trans       &lc_enhe  &trans
 &trans  &trans       &trans  &trans       &trans  &trans    &trans  &trans          &trans       &trans       &trans       &trans    &trans
 &trans  &trans       &trans  &trans       &trans  &trans    &trans  &trans          &trans       &trans       &trans       &trans
