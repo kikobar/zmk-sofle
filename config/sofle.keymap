@@ -52,6 +52,90 @@
 
             label = "LC_A_TILDE";
         };
+
+        lc_e_tilde: lc_e_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp U &kp N0 &kp N0 &kp E &kp N9>,
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_SHIFT>;
+
+            label = "LC_E_TILDE";
+        };
+
+        lc_i_tilde: lc_i_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp U &kp N0 &kp N0 &kp E &kp D>,
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_SHIFT>;
+
+            label = "LC_I_TILDE";
+        };
+
+        lc_o_tilde: lc_o_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp U &kp N0 &kp N0 &kp E &kp N3>,
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_SHIFT>;
+
+            label = "LC_O_TILDE";
+        };
+
+        lc_u_tilde: lc_u_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp U &kp N0 &kp N0 &kp F &kp A>,
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_SHIFT>;
+
+            label = "LC_U_TILDE";
+        };
+
+        lc_enhe: lc_enhe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp U &kp N0 &kp N0 &kp F &kp N1>,
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_SHIFT>;
+
+            label = "LC_ENHE";
+        };
+
+        lc_u_dieresis: lc_u_dieresis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp U &kp N0 &kp N0 &kp F &kp C>,
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_SHIFT>;
+
+            label = "LC_U_DIERESIS";
+        };
     };
 
     keymap {
@@ -97,11 +181,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &lc_a_tilde  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans  &trans       &trans  &trans    &trans  &trans          &trans       &trans       &trans       &trans    &trans
+&trans  &trans       &trans  &lc_e_tilde  &trans  &trans    &trans  &lc_u_dieresis  &lc_u_tilde  &lc_i_tilde  &lc_o_tilde  &trans    &trans
+&trans  &lc_a_tilde  &trans  &trans       &trans  &trans    &trans  &trans          &trans       &trans       &trans       &lc_enhe  &trans
+&trans  &trans       &trans  &trans       &trans  &trans    &trans  &trans          &trans       &trans       &trans       &trans    &trans
+&trans  &trans       &trans  &trans       &trans  &trans    &trans  &trans          &trans       &trans       &trans       &trans
             >;
         };
     };
