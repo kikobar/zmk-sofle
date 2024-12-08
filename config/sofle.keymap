@@ -45,7 +45,8 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL &kp LEFT_ALT &kp U &kp N0 &kp N0 &kp E &kp N1>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_ALT>;
 
             label = "LC_A_TILDE";
         };
